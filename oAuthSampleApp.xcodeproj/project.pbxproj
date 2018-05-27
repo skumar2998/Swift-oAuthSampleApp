@@ -15,6 +15,10 @@
 		DCFF689A20B9CADD0085CA6C /* OAuthSwift.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFF689920B9CADD0085CA6C /* OAuthSwift.png */; };
 		DCFF689C20B9CD8C0085CA6C /* buttonsBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFF689B20B9CD8C0085CA6C /* buttonsBackground.png */; };
 		DCFF689F20B9CF260085CA6C /* OAuthSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFF689E20B9CF260085CA6C /* OAuthSwift.framework */; };
+		DCFF68A320BA51FE0085CA6C /* QuickLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFF68A120BA51FE0085CA6C /* QuickLayout.framework */; };
+		DCFF68A420BA51FE0085CA6C /* SwiftEntryKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFF68A220BA51FE0085CA6C /* SwiftEntryKit.framework */; };
+		DCFF68A620BA54A20085CA6C /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFF68A520BA54A20085CA6C /* Font.swift */; };
+		DCFF68A820BA55560085CA6C /* EntryAttributeWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFF68A720BA55560085CA6C /* EntryAttributeWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		DCFF689920B9CADD0085CA6C /* OAuthSwift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OAuthSwift.png; sourceTree = "<group>"; };
 		DCFF689B20B9CD8C0085CA6C /* buttonsBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonsBackground.png; sourceTree = "<group>"; };
 		DCFF689E20B9CF260085CA6C /* OAuthSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OAuthSwift.framework; path = Carthage/Build/iOS/OAuthSwift.framework; sourceTree = SOURCE_ROOT; };
+		DCFF68A120BA51FE0085CA6C /* QuickLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLayout.framework; path = Carthage/Build/iOS/QuickLayout.framework; sourceTree = SOURCE_ROOT; };
+		DCFF68A220BA51FE0085CA6C /* SwiftEntryKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftEntryKit.framework; path = Carthage/Build/iOS/SwiftEntryKit.framework; sourceTree = SOURCE_ROOT; };
+		DCFF68A520BA54A20085CA6C /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		DCFF68A720BA55560085CA6C /* EntryAttributeWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryAttributeWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +43,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCFF68A320BA51FE0085CA6C /* QuickLayout.framework in Frameworks */,
 				DCFF689F20B9CF260085CA6C /* OAuthSwift.framework in Frameworks */,
+				DCFF68A420BA51FE0085CA6C /* SwiftEntryKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +74,8 @@
 				DCFF689D20B9CEDF0085CA6C /* Frameworks */,
 				DC9E325620B9C9A100CDB2A8 /* AppDelegate.swift */,
 				DC9E325820B9C9A100CDB2A8 /* ViewController.swift */,
+				DCFF68A520BA54A20085CA6C /* Font.swift */,
+				DCFF68A720BA55560085CA6C /* EntryAttributeWrapper.swift */,
 				DC9E325A20B9C9A100CDB2A8 /* Main.storyboard */,
 				DCFF689B20B9CD8C0085CA6C /* buttonsBackground.png */,
 				DCFF689920B9CADD0085CA6C /* OAuthSwift.png */,
@@ -77,6 +89,8 @@
 		DCFF689D20B9CEDF0085CA6C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DCFF68A120BA51FE0085CA6C /* QuickLayout.framework */,
+				DCFF68A220BA51FE0085CA6C /* SwiftEntryKit.framework */,
 				DCFF689E20B9CF260085CA6C /* OAuthSwift.framework */,
 			);
 			path = Frameworks;
@@ -159,9 +173,13 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/OAuthSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftEntryKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/QuickLayout.framework",
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/OAuthSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftEntryKit.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/QuickLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -175,7 +193,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC9E325920B9C9A100CDB2A8 /* ViewController.swift in Sources */,
+				DCFF68A820BA55560085CA6C /* EntryAttributeWrapper.swift in Sources */,
 				DC9E325720B9C9A100CDB2A8 /* AppDelegate.swift in Sources */,
+				DCFF68A620BA54A20085CA6C /* Font.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

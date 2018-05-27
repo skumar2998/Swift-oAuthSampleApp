@@ -1,1 +1,2 @@
 github "OAuthSwift/OAuthSwift" ~> 1.2.1
+github "huri000/SwiftEntryKit" == 0.2.4
